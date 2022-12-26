@@ -134,7 +134,8 @@
         </span>
         </a>
         <div aria-hidden="true">
-            <a class="withLink__StyledLink-zuberk-0 lQqkn" th:href="@{/myPage/index}">
+            <a th:if="${session.userid}" class="withLink__StyledLink-zuberk-0 lQqkn" th:href="@{/myPage/index}">
+            <a th:unless="${session.userid}" class="withLink__StyledLink-zuberk-0 lQqkn" th:href="@{/login/index}">
             <span class="BottomMenuBar__MenuNode-sc-3nfr6g-1 dUVSwM">
                 <img src="data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M17 11H3L1 17.4H19L17 11Z' fill='%23CCCCCC'/%3E %3Ccircle cx='10' cy='5' r='4.5' fill='%23CCCCCC'/%3E %3C/svg%3E" alt="마이 프로필 메뉴">
                 마이

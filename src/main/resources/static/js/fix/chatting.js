@@ -412,6 +412,7 @@ function getChattingContentList(chattingDTOList) {
 
     })
     $(".chattingRoomWrap").html(text)
+    document.getElementById('chattingRoom').scrollTop = document.getElementById('chattingRoom').scrollHeight;
 }
 
 function add(chatting, error){
@@ -483,7 +484,7 @@ function onMessage(e){
         + "</div>"
         + "</div>"
         + "</div>"
-
+    document.getElementById('chattingRoom').scrollTop = document.getElementById('chattingRoom').scrollHeight;
 }
 function onClose(){
     disconnect();
