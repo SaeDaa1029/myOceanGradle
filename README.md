@@ -6,11 +6,15 @@
 <img width="1180" alt="스크린샷 2022-12-27 오전 12 09 34" src="https://user-images.githubusercontent.com/109493547/209562752-6aad8301-2329-4ae2-ab8a-708d17c24b64.png" style = "width: 45%; height : 45%">
 <img width="1177" alt="스크린샷 2022-12-27 오전 12 18 04" src="https://user-images.githubusercontent.com/109493547/209563034-59cb851d-754d-43e2-a858-fe7a266d7154.png" style = "width: 45%; height : 45%">
 </div>
+
+
 <h2>2. 기대 효과</h2>
-<img width="1161" alt="스크린샷 2022-12-27 오전 12 20 31" src="https://user-images.githubusercontent.com/109493547/209563199-cca3e4f8-6675-4f6f-937e-79b4782da073.png" style = "width: 50%; height : 50%">
+<img width="1161" alt="스크린샷 2022-12-27 오전 12 20 31" src="https://user-images.githubusercontent.com/109493547/209563199-cca3e4f8-6675-4f6f-937e-79b4782da073.png" style = "width: 45%; height : 45%">
+
 
 <h2>3. 프로젝트 사용 툴</h2>
-<img width="1160" alt="스크린샷 2022-12-27 오전 12 23 33" src="https://user-images.githubusercontent.com/109493547/209563338-9ff5b39c-c0f9-48c3-abc3-a120a49e286f.png" style = "width: 50%; height : 50%">
+<img width="1160" alt="스크린샷 2022-12-27 오전 12 23 33" src="https://user-images.githubusercontent.com/109493547/209563338-9ff5b39c-c0f9-48c3-abc3-a120a49e286f.png" style = "width: 45%; height : 45%">
+
 
 <h2>4. 담당 업무</h2>
 
