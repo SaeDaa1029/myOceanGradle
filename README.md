@@ -66,7 +66,7 @@ A사용자가 a채팅방에 보낸 메세지가 B사용자가 접속중인 b채�
 🚨문제 원인🚨 <br>
 위에서 접속자들의 WebSocketSession을 static list에 담았다고 적은 바 있다. 다른 채팅방에 접속 중인 사용자의 세션 또한 동일한 list에 담겨있었기 때문에 메세지를 받게된 것이다. 그렇다고 static을 지우자니 다시 메세지 전송이 되질 않았다. <br><br>
 🚀해결 방법🚀<br>
-메세지를 전송하는 메소드에서 발신자의 채팅방과 수신자의 채팅방이 일치하는 세션들에만 메세지를 전송하도록 만들었다. 이를 위해 우선 채팅방을 클릭했을 때 이동하는 컨트롤러에서 HttpSession에 채팅방 아이디를 추가하도록 만들었다. 즉, 채팅방을 클릭할때마다 HttpSession에 저장된 채팅방 정보가 바뀌는 것이다.<br>다음으로, webSocketHandler 클래스에서 .addInterceptors(new HttpSessionHandshakeInterceptor()) 를 추가했다. 이를 통해 HttpSession에 저장돼있던 값들을 WebSocketSession에도 저장할 수 있게했다. 이 두가지 작업을 통해 현재 사용자 어떤 채팅방에 접속한 것인지 확인할 수 있었고, 확성기 오류 또한 해결할 수 있었다.<br><br><br>
+메세지를 전송하는 메소드에서 발신자의 채팅방과 수신자의 채팅방이 일치하는 세션들에만 메세지를 전송하도록 만들었다. 이를 위해 우선 채팅방을 클릭했을 때 이동하는 컨트롤러에서 HttpSession에 채팅방 아이디를 추가하도록 만들었다. 즉, 채팅방을 클릭할때마다 HttpSession에 저장된 채팅방 정보가 바뀌는 것이다.<br>다음으로, WebSocketConfig 파일에 .addInterceptors(new HttpSessionHandshakeInterceptor()) 를 추가했다. 이를 통해 HttpSession에 저장돼있던 값들을 WebSocketSession에도 저장할 수 있게했다. 이 두가지 작업을 통해 현재 사용자 어떤 채팅방에 접속한 것인지 확인할 수 있었고, 확성기 오류 또한 해결할 수 있었다.<br><br><br>
 
 
 
